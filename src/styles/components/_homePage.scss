@@ -1,0 +1,92 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+.homepage {
+  padding-top: 5rem;
+}
+
+.card-text-holder {
+  width: 200px;
+}
+
+.animation_homepage_loading {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 123123123123312;
+  background-color: #fff;
+}
+
+.button-homepage {
+  color: var.$orange-color !important;
+}
+
+.color-brown {
+  color: var.$brown-color !important;
+}
+
+.button-cs {
+  @include mix.primary-button;
+}
+
+.button-cs-brown {
+  @include mix.primary-button(var.$brown-color, var.$white-color);
+}
+
+.d-light {
+  font-weight: var.$font-weight-lightest;
+  font-size: 32px;
+}
+
+.bg-butterfly {
+  background-image: url('../../../public/images/Home-Page/bg_spiral_butterfly_home_mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.razglednica {
+  background-image: url('../../../public/images/Home-Page/Ohrid_razglednica_1913.png');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 300px;
+}
+
+.old-town {
+  background-image: url('../../../public/images/Home-Page/ohrid_old_town.jpg');
+  padding-top: 1000px;
+  background-size: cover;
+  background-position: center;
+
+  &-text {
+    background-color: var.$white-color;
+    opacity: 85%;
+    padding: 16px 24px 24px 24px;
+    margin-bottom: 16px;
+    border-radius: 40px 0 40px 0;
+  }
+}
+.cart-container {
+  position: relative;
+  .cart-icon {
+    padding: 1px;
+    text-align: center;
+    position: absolute;
+    top: -7px;
+    right: -4px;
+    background-color: var.$orange-color;
+    font-size: 11px;
+    color: var.$white-color;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.our-story-color {
+  color: var.$white-color !important;
+}

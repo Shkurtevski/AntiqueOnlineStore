@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.col {
+  padding-left: 16px;
+  padding-right: 16px;
+}

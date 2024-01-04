@@ -1,0 +1,43 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  border: 1px solid var.$brown-color;
+  border-top-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  .quantity-btn {
+    font-size: 14px;
+    padding: 0 8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var.$brown-color;
+    .decrement {
+      margin: 0 0.3rem;
+    }
+    .increment {
+      margin: 0 0.3rem;
+    }
+  }
+  .left-btn {
+    border-right: 1px solid var.$brown-color;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .right-btn {
+    border-left: 1px solid var.$brown-color;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  .quantity-number {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.checkout-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 7rem 0;
+  img {
+    width: 100px;
+  }
+}

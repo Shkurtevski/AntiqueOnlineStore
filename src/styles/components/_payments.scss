@@ -1,0 +1,100 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.payments {
+  padding-top: 1rem;
+  .payments-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    .payments-header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      .logo-icon {
+        width: 50px;
+      }
+      .logo-text {
+        width: 150px;
+      }
+      .secure-pay {
+        width: 100px;
+      }
+    }
+    .payment-informations {
+      margin-bottom: 1rem;
+      .payment-informations-wrapper {
+        border: 1px solid var.$brown-color;
+        border-top-left-radius: 2.2rem;
+        border-bottom-right-radius: 2.2rem;
+        padding: 1rem;
+        .p-group {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+        h2 {
+          font-size: 1.7rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 0.9rem;
+
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
+          }
+        }
+        .bold-p {
+          font-weight: bold;
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+    form {
+      h2 {
+        font-size: 1.7rem;
+      }
+      font-size: 0.9rem;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        input {
+          height: 40px;
+        }
+      }
+      .form-group-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .form-group {
+          margin-bottom: 0;
+          input {
+            max-width: 100%;
+            width: 130px;
+
+            @media (max-width: 350px) {
+              width: 120px;
+            }
+            @media (max-width: 301px) {
+              width: 100px;
+            }
+          }
+        }
+      }
+      .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        button {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

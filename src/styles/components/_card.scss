@@ -1,0 +1,22 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.product-card {
+  .product-card-wrapper {
+    img {
+      margin-bottom: 0.5rem;
+    }
+    .product-card-inner {
+      padding: 0 10px;
+      .product-title,
+      .product-price {
+        color: var.$brown-color;
+        margin-bottom: 0.5rem;
+      }
+      .product-price {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

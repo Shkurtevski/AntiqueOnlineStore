@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+.processing-payment-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.payment-successful {
+  h2,
+  p.small {
+    color: var.$green-color;
+  }
+
+  .link-back_payment {
+    color: var.$orange-color !important;
+  }
+}

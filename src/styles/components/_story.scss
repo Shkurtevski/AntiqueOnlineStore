@@ -1,0 +1,172 @@
+.story-text {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: xx-large;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+}
+
+.story-text-small {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: small;    
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+
+.story-top {
+    position: absolute;
+    top: 770px;
+    color: #FBFAF8;
+    padding-right: 20%;
+}
+.story-bottom {
+    position: absolute;
+    top: 1660px;
+    color: #FBFAF8; 
+    text-align: right;
+    padding-left: 15%;
+}
+.cooper {
+    position: absolute;
+    width: 272px;
+    height: 350px;
+    top: 280px;
+    left: 56%;
+    rotate: -36.77deg;
+    z-index: 9999999998;
+} 
+.belt {
+    position: absolute;
+    min-width: 450.95px;
+    height: 243px;
+    top: 2170px;
+    left: 13%;
+    rotate: -28deg;
+}
+.story-img {
+    width: 736.06px;
+    height: 424px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../public/images/OurStoryPage/Ohrid_razglednica_1913.png');
+    position: absolute;
+    top: 50%;
+}
+
+.story-img-bg {
+    width: 375px;
+    height: 1600px;
+    top: 631px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../public/images/OurStoryPage/copper aging.jpg');
+}
+.slave {
+    width: 235px;
+    height: 172px;
+    margin-left: 40px;
+}
+.helmet {
+    width: 401px;
+    height: 485px;
+    position: absolute;
+    z-index: 9999998;
+    top: 2815px;
+    left: 25%;
+}
+.ring {
+    width: 350px;
+    height: 267px;
+    margin-left: 20%;
+}
+.bracelet {
+    width: 372px;
+    height: 452px;
+    top: 4200px;
+    left: 40px;
+    rotate: 24deg;
+    position: absolute;
+}
+
+.slider img {
+    width: 100%;
+    max-height: 30vh;
+}
+
+.wall {
+    width: 375px;
+    height: 1105px;
+    /* top: 6827px; */
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../public/images/OurStoryPage/wall background.jpg');
+}
+
+.wall::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #FBFAF8 0%, rgba(251, 250, 248, 0) 18.37%);
+}
+
+.wall-text {
+    padding-right: 45%;
+    position: absolute;
+}
+
+.wall img {
+    position: absolute;
+    z-index: 9999998;
+}
+.certificate-1 {
+    width: 115px;
+    height: 143px;
+    top: 10%;
+    left: 226px;
+    box-shadow: 0px 5px 5px 0px #3C19134D;
+    box-shadow: 0px 2px 2px 0px #1C1A1B4D;
+}
+.certificate-2 {
+    width: 172px;
+    height: 129px;
+    top: 18%;
+    left: 20px;
+    box-shadow: 0px 5px 5px 0px #3C19134D;
+    box-shadow: 0px 2px 2px 0px #1C1A1B4D;
+}
+.certificate-3 {
+    width: 274px;
+    height: 185px;
+    top: 33%;
+    left: 81px;
+    box-shadow: 0px 5px 5px 0px #3C19134D;
+    box-shadow: 0px 2px 2px 0px #1C1A1B4D;
+}
+.certificate-4 {
+    width: 218px;
+    height: 157px;
+    top: 53%;
+    left: 36px;
+    box-shadow: 0px 5px 5px 0px #3C19134D;
+    box-shadow: 0px 2px 2px 0px #1C1A1B4D;
+}
+.certificate-5 {
+    width: 131px;
+    height: 178px;
+    top: 70%;
+    left: 188px;
+    box-shadow: 0px 5px 5px 0px #3C19134D;
+    box-shadow: 0px 2px 2px 0px #1C1A1B4D;
+}
+
+

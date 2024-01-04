@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.related-products {
+    img {
+        margin: 2rem 0;
+    }
+    h2 {
+        margin-bottom: 1rem;
+    }
+  .related-products-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+
+    .related-products-content {
+      display: flex;
+      .product-card {
+        margin-right: 1px;
+        .product-card-wrapper {
+            img {
+                height: 350px;
+                margin-top: 0;
+            }
+        }
+      }
+    }
+  }
+}

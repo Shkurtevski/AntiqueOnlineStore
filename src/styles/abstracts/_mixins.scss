@@ -1,0 +1,100 @@
+@use './variables' as var;
+@use 'sass:math';
+
+// RESPONSIVE LAPTOP FIRST DESIGN MIXINS
+@mixin four-k-styles {
+  @media (max-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin laptop-l-styles {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop-m-styles {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-styles {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l-styles {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin mobile-m-styles {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin mobile-s-styles {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+%section {
+  padding-top: (var.$gutter-base * 2);
+  padding-bottom: (var.$gutter-base * 2);
+
+  @include tablet-styles {
+    padding: math.div(var.$gutter-base, 2) 0;
+  }
+}
+
+%wrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet-styles {
+    width: 100%;
+    padding-left: math.div(var.$gutter-base, 2);
+    padding-right: math.div(var.$gutter-base, 2);
+  }
+}
+
+@mixin list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin primary-select($color: var.$secondary-color) {
+  padding: 5px 10px;
+  border: 1px solid $color;
+  color: $color;
+  border-radius: 2px;
+  font-size: 13px;
+  background-color: transparent;
+}
+
+@mixin primary-option($color: var.$secondary-color, $bg-color: var.$primary-color) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin primary-button($bg-color: var.$white-color, $color: var.$orange-color) {
+  color: $color;
+  font-size: 16px;
+  padding: 12px 24px 12px 24px;
+  font-weight: 700;
+  border: 2px solid $color;
+  border-radius: 16px 0 16px 0;
+  background-color: $bg-color;
+}

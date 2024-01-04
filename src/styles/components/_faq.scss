@@ -1,0 +1,37 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+.faq-bg {
+  background-image: url('./../../public/images/FAQPage/faq_bg_vector.svg');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 150px;
+}
+
+.accordion {
+  background-color: var.$white-color;
+  &-item {
+    border-color: var.$brown-color !important;
+  }
+
+  button {
+    color: var.$brown-color;
+  }
+  button:focus {
+    box-shadow: none;
+  }
+  &-button:not(.collapsed) {
+    background-color: var.$white-color;
+  }
+}
+
+.accordion-button:after {
+  order: -1;
+  align-self: flex-start;
+  margin-left: 0;
+  margin-right: 10px;
+  background-image: url('../../../public/images/FAQPage/plus.png') !important;
+}

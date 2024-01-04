@@ -1,0 +1,89 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.product-page {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  .product-page-wrapper {
+    .content-container {
+      img,
+      h1,
+      span {
+        margin-bottom: 1rem;
+      }
+      .content-wrapper {
+        padding: 0 16px;
+        h1 {
+          margin-bottom: 1rem;
+          color: var.$brown-color;
+        }
+        .span-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            margin-bottom: 1rem;
+            color: var.$brown-color;
+            font-size: 14px;
+            &:not(:last-child) {
+              margin-right: 0.5rem;
+            }
+            &:hover {
+              transition: 0.4s;
+              color: var.$orange-color;
+              text-decoration: underline;
+            }
+            @media (max-width: 291px) {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+      .search-sort-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        input {
+          border: 1px solid #3c191380;
+          border-radius: 0.9rem;
+          outline: none;
+          padding-left: 1rem;
+          max-width: 100%;
+          width: 150px;
+          font-size: 14px;
+          &::placeholder {
+            color: #3c191380;
+          }
+          @media (max-width: 291px) {
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+          }
+        }
+        select {
+          border: none;
+          outline: none;
+          color: #3c191380;
+          font-size: 14px;
+        }
+      }
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+    }
+    .load-more-button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        border: none;
+        background-color: transparent;
+        color: var.$brown-color;
+        max-width: 150px;
+      }
+    }
+  }
+}

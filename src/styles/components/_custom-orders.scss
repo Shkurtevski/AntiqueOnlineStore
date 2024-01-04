@@ -1,0 +1,58 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+@use 'sass:math';
+
+.custom-orders {
+  &-bg {
+    background-image: url('../../../public/images/CustomOrdersPage/custom_orders_title.jpg');
+    // padding-top: 180px;
+    // padding-bottom: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &-title {
+    color: var.$white-color;
+    font-size: 48px;
+    padding-top: 329px;
+    padding-bottom: 97px;
+  }
+
+  .form-cs {
+    input,
+    textarea {
+      border: 1px solid var.$brown-color !important;
+      opacity: 50%;
+      border-radius: 0;
+    }
+
+    span {
+      opacity: 50%;
+    }
+
+    .button-cs-brown-outline-add {
+      @include mix.primary-button(var.$white-color, var.$brown-color);
+      display: flex;
+      align-items: center;
+      span {
+        opacity: 1;
+      }
+      .fa-plus {
+        font-size: 25px;
+        font-weight: var.$font-weight-lightest !important;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .gallery {
+    height: 200px;
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
